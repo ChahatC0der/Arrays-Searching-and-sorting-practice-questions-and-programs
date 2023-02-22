@@ -1,0 +1,34 @@
+import java.lang.Math; 
+import java.util.Scanner; 
+public class javabasics{ 
+    public static void linearSearch(String sweets[],String elementToFind){
+        int index=-1;
+        for(int i=0;i<sweets.length;i++){
+            if(sweets[i]==elementToFind){
+                index=i;
+                System.out.println(index);
+                
+            }
+        }
+
+        
+    }
+    public static void main(String args[]){ 
+        Scanner sc = new Scanner(System.in); 
+        String sweets[] ={"rasgulla","gulabjamun","gajarhalwa","rasmalai"};
+        
+      
+        String elementToFind = sc.next();    
+        // linearSearch(sweets,elementToFind); 
+        // System.out.println(index);
+        int index=-1;
+        for(int i=0;i<sweets.length;i++){
+            if(elementToFind.equals(sweets[i])){
+                index=i;
+                System.out.println(index);
+                return;
+            }
+        }
+        
+    } 
+}
